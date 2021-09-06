@@ -577,6 +577,9 @@ h1 span {
     transform: scale(1.5);
 }
 
+
+/* contact */
+
 .contact {
     width: 100%;
     height: 100vh;
@@ -628,4 +631,295 @@ h1 span {
     font-size: 1.5em;
     color: rgba(0, 255, 255, 1);
     border-bottom: 1px solid rgba(0, 255, 255, 0.7);
+}
+
+@media (max-width:1024px) {
+    /* container */
+    .container .text {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    /* skills */
+    .skills .item {
+        width: 18%;
+    }
+    /* works */
+    .fa-chevron-right {
+        font-size: 80px;
+        line-height: 170px;
+    }
+}
+
+@media (max-width:768px) {
+    /* container */
+    .container .img {
+        width: 45%;
+    }
+    .container .text {
+        padding: 10px;
+    }
+    h1 {
+        line-height: 70px;
+        font-size: 2.6em;
+    }
+    /* about */
+    .about .text h2 {
+        top: -17%;
+        font-size: 2.3em;
+    }
+    .about .text p {
+        font-size: .9em;
+        line-height: 25px;
+    }
+    .about span {
+        font-size: 6em;
+        bottom: 5%;
+    }
+    .about .img {
+        width: 45%;
+    }
+    /* skills */
+    .skills .item {
+        width: 20%;
+    }
+    .skills .item .fa {
+        font-size: 3em;
+    }
+    .skills .item h3 {
+        font-size: 1.2em;
+    }
+    /* experiences */
+    .experiences .wrap {
+        width: 70%;
+    }
+    /* works */
+    .works .wrap {
+        width: 85%;
+    }
+    /* contact */
+    .contact .wrap {
+        width: 50%;
+        height: 60%;
+    }
+}
+
+@media (max-width:425px) {
+    /* container */
+    .container {
+        flex-direction: column;
+    }
+    .container .img {
+        margin: 20px 0;
+        width: 75%;
+    }
+    h1 {
+        font-size: 2.5em;
+        line-height: 50px;
+        margin-top: 10px;
+    }
+    .container .text {
+        width: 70%;
+    }
+    .container .text p {
+        font-size: .9em;
+    }
+    .container .link {
+        right: 20px;
+    }
+    .container .link a {
+        font-size: 30px;
+    }
+    /* about */
+    .about {
+        flex-direction: column-reverse;
+    }
+    .about .text {
+        width: 85%;
+    }
+    .about .text h2 {
+        font-size: 1.5em;
+        top: -10%;
+    }
+    .about span {
+        writing-mode: vertical-lr;
+        font-size: 4em;
+        left: -5%;
+        top: 7%;
+    }
+    .about .img {
+        width: 60%;
+        margin-top: 2%;
+        margin-left: 30%;
+        z-index: -2;
+    }
+    /* skills */
+    .skills {
+        flex-direction: column;
+        height: auto;
+    }
+    .skills .item {
+        width: 50%;
+        height: 270px;
+        margin: 20px 0;
+    }
+    .skills .item:nth-child(even) {
+        height: 330px;
+    }
+    .skills .item .fa {
+        margin: 10px 0;
+        font-size: 2em;
+    }
+    /* experiences */
+    .experiences .wrap {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .experiences .wrap h2 {
+        margin-bottom: 50px;
+    }
+    .experiences .wrap .item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .experiences .wrap .item:after {
+        height: 110%;
+    }
+    .experiences .wrap .item h3 {
+        display: flex;
+        flex-direction: column;
+    }
+    .experiences .wrap .item h3 span {
+        left: 0;
+        top: 20%;
+        position: unset;
+    }
+    .experiences .wrap .item p {
+        margin: 20px 0;
+    }
+    .tags ul {
+        position: unset;
+        flex-wrap: wrap;
+        left: 0;
+        bottom: -30%;
+    }
+    .tags ul li:not(:first-child) {
+        margin-left: 0;
+    }
+    /* works */
+    .works .wrap {
+        width: 95%;
+        justify-content: center;
+    }
+    .works .wrap .item {
+        width: 40%;
+    }
+    .visitLink {
+        padding: 5px 15px;
+    }
+    /* contact */
+    .contact .wrap {
+        width: 60%;
+        height: 50%;
+    }
+    .contact .wrap h2 {
+        font-size: 2em;
+        margin: 10px;
+        padding: 0;
+    }
+    .contact .wrap .link {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .contact .wrap .link a {
+        padding: 5px;
+    }
+}
+
+@media (max-width:320px) {
+    /* container */
+    .container .img {
+        width: 85%;
+    }
+    .container img {
+        width: 70%;
+    }
+    h1 {
+        font-size: 1.5em;
+        line-height: 40px;
+        margin: 0;
+    }
+    .container .text {
+        width: 75%;
+    }
+    .container .text p {
+        font-size: .8em;
+    }
+    .container .link {
+        margin: 0 10px;
+        flex-direction: row;
+        position: unset;
+    }
+    .container .link a {
+        padding: 2px;
+        font-size: 30px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    /* about */
+    .about .text {
+        padding: 40px 20px;
+    }
+    /* experience */
+    .experiences .wrap h2 {
+        width: 180px;
+        font-size: 1.3em;
+    }
+    .experiences .wrap .item h3 {
+        font-size: 1em;
+    }
+    .experiences .wrap .item h3 span {
+        margin-top: 5px;
+    }
+    .experiences .wrap .item p {
+        font-size: .7em;
+        line-height: 20px
+    }
+    .tags ul li {
+        font-size: .6em;
+    }
+    /* works */
+    .works h2 {
+        font-size: 1.7em;
+        width: 150px;
+        height: 60px;
+    }
+    .desc {
+        font-size: .7em;
+        line-height: 25px
+    }
+    .works .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .works .wrap .item {
+        width: 80%;
+        margin: 20px 10px;
+    }
+    /* contact */
+    .contact .wrap {
+        width: 60%;
+        height: 45%;
+    }
+    .contact .wrap h2 {
+        font-size: 1.4em;
+    }
+    .contact .wrap .link a {
+        font-size: 1em;
+    }
 }
