@@ -781,6 +781,8 @@ h1 span {
     }
     .experiences .wrap h2 {
         margin-bottom: 50px;
+        width: 200px;
+        font-size: 1.5em;
     }
     .experiences .wrap .item {
         margin-top: 10px;
@@ -813,6 +815,8 @@ h1 span {
     /* works */
     .works .wrap {
         width: 95%;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
     }
     .works .wrap .item {
@@ -829,7 +833,11 @@ h1 span {
     .contact .wrap h2 {
         font-size: 2em;
         margin: 10px;
-        padding: 0;
+        padding: 10px;
+    }
+    .works .wrap .item {
+        width: 80%;
+        margin: 20px 10px;
     }
     .contact .wrap .link {
         display: flex;
@@ -876,10 +884,6 @@ h1 span {
         padding: 40px 20px;
     }
     /* experience */
-    .experiences .wrap h2 {
-        width: 180px;
-        font-size: 1.3em;
-    }
     .experiences .wrap .item h3 {
         font-size: 1em;
     }
@@ -902,14 +906,6 @@ h1 span {
     .desc {
         font-size: .7em;
         line-height: 25px
-    }
-    .works .wrap {
-        flex-direction: column;
-        align-items: center;
-    }
-    .works .wrap .item {
-        width: 80%;
-        margin: 20px 10px;
     }
     /* contact */
     .contact .wrap {
