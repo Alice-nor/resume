@@ -43,7 +43,6 @@ function aboutMove(e) {
 
     aboutImg.style.transform = `translate(${xWalk}px,${yWalk}px)`;
 }
-
 // works icon 出現
 function appear() {
     const imgItem = this.childNodes[1];
